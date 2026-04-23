@@ -1,0 +1,93 @@
+:root {
+  --bg: #ffdf6b;
+  --card-bg: #ffffff;
+  --accent: #ff5c00;
+  --secondary: #5d5dff;
+  --border: #000000;
+  --shadow: 8px 8px 0px 0px #000000;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.label {
+  font-size: 44px;
+  font-family: console;
+  margin-top: 10px;
+  display: inline-block;
+  max-width: fit-content;
+  font-weight: 900;
+}
+
+#scoredisplay {
+  font-size: 44px;
+  font-family: console;
+  margin-top: 10px;
+  display: inline-block;
+  max-width: fit-content;
+  font-weight: 900;
+}
+
+#quiz-container {
+  background: var(--card-bg);
+  border: 4px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#questionBox {
+  font-size: 1.8rem;
+  font-weight: 900;
+  border-bottom: 4px solid var(--border);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: var(--accent);
+  color: black;
+  border: 4px solid var(--border);
+  box-shadow: 4px 4px 0px var(--border);
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 6px 6px 0px var(--border);
+}
+
+button:active {
+  box-shadow: 0px 0px 0px var(--border);
+}
+
+#nextQuestion {
+  background: #00f5d4;
+}
+
+#ansChecker {
+  font-weight: 900;
+  margin-top: 10px;
+  padding: 10px;
+  background: #eee;
+  border: 2px dashed var(--border);
+}

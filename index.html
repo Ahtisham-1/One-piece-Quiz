@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-card">
+      <div class="card-header">
+        <div class="score-badge">
+          <span class="label">SCORE</span>
+          <span id="scoredisplay">0</span>
+        </div>
+      </div>
+
+      <div id="quiz-content">
+        <div id="questionBox" class="question-text"></div>
+        <div id="optionBox" class="options-grid"></div>
+
+        <div id="ansChecker" class="feedback-area"></div>
+
+        <div class="card-footer">
+          <button id="nextQuestion" class="btn-secondary">
+            Next Question →
+          </button>
+        </div>
+      </div>
+
+      <div id="resultBox" class="result-screen"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
